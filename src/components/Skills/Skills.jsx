@@ -15,10 +15,18 @@ import javascript from "../../assets/skills/javascript.png";
 import node from "../../assets/skills/node.png";
 import nextJs from "../../assets/skills/nextjs.png";
 import firebase from "../../assets/skills/firebase.png";
+import aws from "../../assets/skills/aws.png";
 
-import { motion } from "framer-motion";
+import { motion, useSpring } from "framer-motion";
 
 import "./Skills.scss";
+
+let viewportWidth = window.innerWidth;
+
+const transition = {
+  duration: 0.3,
+  type: useSpring,
+};
 
 const Skills = () => {
   const certificates = [
@@ -62,7 +70,7 @@ const Skills = () => {
       ],
     },
     {
-      skill: "React",
+      skill: "ReactJs",
       src: "https://ude.my/UC-c7aa9939-c33c-46aa-a88a-6a345ba05bbf",
       id: "4-d",
       certificate: [
@@ -74,10 +82,40 @@ const Skills = () => {
         },
       ],
     },
+    {
+      skill: "NodeJS",
+      src: "https://www.udemy.com/certificate/UC-a9222dec-c428-423b-9a8d-7527ce09aba6/",
+      id: "5-e",
+      certificate: [
+        {
+          id: "5",
+          name: "The Complete Node.js Developer Course (3rd Edition) ",
+          company: "Udemy",
+          desc: "In the 35 hour course I learned all about Node-js starting from the basics and into more advanced topics. I learned  how to use Apis and async javaScript. I learned how to create and serve web application using express. I learned how to make REST API and make API endpoints. I learned how to use Socket.io for creating socket apps. I practiced what i learned by making 3 apps (chat app - weather app - notes app).",
+        },
+      ],
+    },
+    {
+      skill: "AWS",
+      src: "https://verify.acloud.guru/8678E84CA8A9",
+      id: "6-f",
+      certificate: [
+        {
+          id: "6",
+          name: "AWS Certified Cloud Practitioner (CLF-C01)",
+          company: "Acloud guru",
+          desc: "In the 45 hour course I learned all about AWS starting from the basics and into more advanced topics. ",
+        },
+      ],
+    },
   ];
 
   return (
-    <section className="skills">
+    <motion.section
+      whileInView={{ transform: "translateY(0%)", opacity: [0, 1] }}
+      transition={transition}
+      className="skills"
+    >
       <SectionTitle>skills & certificates</SectionTitle>
 
       <div className="skills__container">
@@ -132,9 +170,9 @@ const Skills = () => {
           </div>
           <div className="skills__item app__flex">
             <div className="app__flex">
-              <img src={firebase} alt="firebase" />
+              <img src={aws} alt="aws" />
             </div>
-            <p className="skill-name">Firebase</p>
+            <p className="skill-name">AWS</p>
           </div>
         </div>
 
@@ -181,7 +219,7 @@ const Skills = () => {
           })}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

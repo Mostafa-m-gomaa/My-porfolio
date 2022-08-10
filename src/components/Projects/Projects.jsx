@@ -1,6 +1,6 @@
 import classes from "./Projects.scss";
 import SectionTitle from "../UI/SectionTitle";
-import { useState } from "react";
+import { Fragment, useState } from "react";
 import { motion } from "framer-motion";
 
 import { AiFillEye, AiFillGithub } from "react-icons/ai";
@@ -13,9 +13,10 @@ import bankist from "../../assets/projects-images/Bankist.png";
 import bankistWebsite from "../../assets/projects-images/bankist-website.png";
 import mapty from "../../assets/projects-images/mapty.png";
 import kasper from "../../assets/projects-images/Kasper.png";
-import expenses from "../../assets/projects-images/expenses.png";
 import passwords from "../../assets/projects-images/passwords.png";
 import leon from "../../assets/projects-images/Leon.png";
+import chat from "../../assets/projects-images/chat.png";
+import weather from "../../assets/projects-images/weather-app.png";
 
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState("All");
@@ -68,10 +69,30 @@ const Projects = () => {
     {
       title: "Mapty",
       description: "A simple web application allows you to track your workouts",
-      projectLink: "https://abdelrhman-ahmed-kamal.github.io/mapty/",
+      projectLink: "https://abdelrahman-node-weather-app.herokuapp.com/",
       codeLink: "https://github.com/abdelrhman-ahmed-kamal/mapty/",
       img: mapty,
       tags: ["JavaScript", "ALL"],
+    },
+    {
+      title: "Weather App",
+      description:
+        "A weather app allows you to get the weather in your current location",
+      projectLink: "https://abdelrahman-forkify.netlify.app/",
+      codeLink:
+        "https://github.com/abdelrhman-ahmed-kamal/Kalbonyan-Elmarsos/tree/main/02-Udemy/-05-Nodejs/Projects/Weather-App",
+      img: weather,
+      tags: ["NodeJs", "ALL"],
+    },
+    {
+      title: "Chat app",
+      description:
+        "A Chat app allows you to chat with your friends in chat rooms",
+      projectLink: "https://abdelrahman-chat-app.herokuapp.com/",
+      codeLink:
+        "https://github.com/abdelrhman-ahmed-kamal/Kalbonyan-Elmarsos/tree/main/02-Udemy/-05-Nodejs/Projects/Chat-App",
+      img: chat,
+      tags: ["NodeJs", "ALL"],
     },
     {
       title: "bankist website",
@@ -132,23 +153,25 @@ const Projects = () => {
     }, 500);
   };
   return (
-    <>
+    <Fragment>
       <SectionTitle>projects</SectionTitle>
       <div className="projects">
         <div className="app__work-filter">
-          {["All", "React", "JavaScript", "HTML & CSS"].map((item, index) => {
-            return (
-              <div
-                key={index}
-                onClick={() => handleWorkFilter(item)}
-                className={`app__work-filter-item app__flex ${
-                  activeFilter === item ? "item-active" : ""
-                }`}
-              >
-                {item}
-              </div>
-            );
-          })}
+          {["All", "React", "JavaScript", "HTML & CSS", "NodeJs"].map(
+            (item, index) => {
+              return (
+                <div
+                  key={index}
+                  onClick={() => handleWorkFilter(item)}
+                  className={`app__work-filter-item app__flex ${
+                    activeFilter === item ? "item-active" : ""
+                  }`}
+                >
+                  {item}
+                </div>
+              );
+            }
+          )}
         </div>
 
         <motion.div
@@ -213,7 +236,7 @@ const Projects = () => {
           ))}
         </motion.div>
       </div>
-    </>
+    </Fragment>
   );
 };
 export default Projects;

@@ -8,7 +8,6 @@ import { motion, useSpring } from "framer-motion";
 let viewportWidth = window.innerWidth;
 
 const Services = () => {
-  console.log(viewportWidth);
   const transition = {
     duration: 1,
     type: useSpring,
@@ -43,7 +42,6 @@ const Services = () => {
                 viewportWidth > 776 ? "translateX(-90%)" : "translateX(0)",
               opacity: viewportWidth > 776 ? 0 : 1,
             }}
-            className={classes["back-end"]}
             style={{
               top: "17.2rem",
               left:
@@ -52,6 +50,7 @@ const Services = () => {
                 viewportWidth > 776 ? "translateX(-90%)" : "translateX(0)",
               opacity: viewportWidth > 776 ? 0 : 1,
             }}
+            className={classes["back-end"]}
           >
             <Card
               emoji={<FcAcceptDatabase fontSize="100px" />}
