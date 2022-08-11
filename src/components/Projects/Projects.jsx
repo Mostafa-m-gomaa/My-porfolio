@@ -69,7 +69,7 @@ const Projects = () => {
     {
       title: "Mapty",
       description: "A simple web application allows you to track your workouts",
-      projectLink: "https://abdelrahman-node-weather-app.herokuapp.com/",
+      projectLink: "https://abdelrhman-ahmed-kamal.github.io/mapty/",
       codeLink: "https://github.com/abdelrhman-ahmed-kamal/mapty/",
       img: mapty,
       tags: ["JavaScript", "ALL"],
