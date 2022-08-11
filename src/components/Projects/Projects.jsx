@@ -78,7 +78,7 @@ const Projects = () => {
       title: "Weather App",
       description:
         "A weather app allows you to get the weather in your current location",
-      projectLink: "https://abdelrahman-forkify.netlify.app/",
+      projectLink: "https://abdelrahman-node-weather-app.herokuapp.com/",
       codeLink:
         "https://github.com/abdelrhman-ahmed-kamal/Kalbonyan-Elmarsos/tree/main/02-Udemy/-05-Nodejs/Projects/Weather-App",
       img: weather,
@@ -88,7 +88,7 @@ const Projects = () => {
       title: "Chat app",
       description:
         "A Chat app allows you to chat with your friends in chat rooms",
-      projectLink: "https://abdelrahman-chat-app.herokuapp.com/",
+      projectLink: "https://abdelrahman-chat-app.herokuapp.com",
       codeLink:
         "https://github.com/abdelrhman-ahmed-kamal/Kalbonyan-Elmarsos/tree/main/02-Udemy/-05-Nodejs/Projects/Chat-App",
       img: chat,
