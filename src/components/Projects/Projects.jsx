@@ -17,6 +17,8 @@ import passwords from "../../assets/projects-images/passwords.png";
 import leon from "../../assets/projects-images/Leon.png";
 import chat from "../../assets/projects-images/chat.png";
 import weather from "../../assets/projects-images/weather-app.png";
+import sst from "../../assets/projects-images/sst.png";
+import productivity from "../../assets/projects-images/productivity-zone.png";
 
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState("All");
@@ -48,13 +50,22 @@ const Projects = () => {
       tags: ["HTML & CSS", "ALL"],
     },
     {
-      title: "Bankist",
+      title: "Productivity zone",
       description:
-        "A simulation for a bank with some interested functionality fake login 'js' '1111'",
-      projectLink: "https://abdelrhman-ahmed-kamal.github.io/bankist/",
-      codeLink: "https://github.com/abdelrhman-ahmed-kamal/bankist/",
-      img: bankist,
-      tags: ["JavaScript", "ALL"],
+        "A lot of useful tools that helps you te be more productive ",
+      projectLink:
+        "https://abdelrhman-ahmed-kamal.github.io/productivity-zone/",
+      codeLink: "https://github.com/abdelrhman-ahmed-kamal/productivity-zone",
+      img: productivity,
+      tags: ["React", "ALL"],
+    },
+    {
+      title: "NoteZilla",
+      description: "A Note taking app made with sst framework",
+      projectLink: "https://d36pfzmwqzyqcp.cloudfront.net/",
+      codeLink: "https://github.com/abdelrhman-ahmed-kamal/Notezilla-app",
+      img: sst,
+      tags: ["React", "ALL"],
     },
     {
       title: "Passwords app",
@@ -65,6 +76,15 @@ const Projects = () => {
         "https://github.com/abdelrhman-ahmed-kamal/passwords-manager-app/",
       img: passwords,
       tags: ["React", "ALL"],
+    },
+    {
+      title: "Bankist",
+      description:
+        "A simulation for a bank with some interested functionality fake login 'js' '1111'",
+      projectLink: "https://abdelrhman-ahmed-kamal.github.io/bankist/",
+      codeLink: "https://github.com/abdelrhman-ahmed-kamal/bankist/",
+      img: bankist,
+      tags: ["JavaScript", "ALL"],
     },
     {
       title: "Mapty",
