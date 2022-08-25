@@ -98,7 +98,7 @@ const Projects = () => {
       title: "Weather App",
       description:
         "A weather app allows you to get the weather in your current location",
-      projectLink: "https://abdelrahman-node-weather-app.herokuapp.com/",
+      projectLink: "https://abdelrahman-node-weather-app-2.herokuapp.com/",
       codeLink:
         "https://github.com/abdelrhman-ahmed-kamal/Kalbonyan-Elmarsos/tree/main/02-Udemy/-05-Nodejs/Projects/Weather-App",
       img: weather,
