@@ -2,9 +2,7 @@ import classes from "./Projects.scss";
 import SectionTitle from "../UI/SectionTitle";
 import { Fragment, useState } from "react";
 import { motion } from "framer-motion";
-
 import { AiFillEye, AiFillGithub } from "react-icons/ai";
-
 import cvWebsite from "../../assets/projects-images/CV-website.png";
 import omnifood from "../../assets/projects-images/Omnifood.png";
 import forkify from "../../assets/projects-images/forkify.png";
@@ -19,6 +17,17 @@ import chat from "../../assets/projects-images/chat.png";
 import weather from "../../assets/projects-images/weather-app.png";
 import sst from "../../assets/projects-images/sst.png";
 import productivity from "../../assets/projects-images/productivity-zone.png";
+import hero from '../../assets/images/hero.png'
+import Xo from '../../assets/images/Untitled.png'
+import weatheri from '../../assets/images/weather.png'
+import todo from '../../assets/images/todo.png'
+import port from '../../assets/images/port.png'
+import crepto from '../../assets/images/crepto.png'
+import speed from '../../assets/images/speed.png'
+import oodo from '../../assets/images/toodo.png'
+import htm from '../../assets/images/htm.png'
+import cvs from '../../assets/images/cvs.png'
+import creative from '../../assets/images/creative.png'
 
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState("All");
@@ -33,65 +42,75 @@ const Projects = () => {
 
   const works = [
     {
-      title: "Forkify",
+      title: "Portfolio for my work",
       description:
-        "A recipes website allows you to search over 1,000,000 recipe.",
-      projectLink: "https://abdelrahman-forkify.netlify.app/",
-      codeLink: "https://github.com/abdelrhman-ahmed-kamal/forkify/",
-      img: forkify,
+        " A website that represent my  latest work and how to contact me",
+      projectLink: "https://mostafa-m-gomaa.github.io/my-last-porto/",
+      codeLink: "https://github.com/Mostafa-m-gomaa/my-last-porto",
+      img: port,
       tags: ["JavaScript", "ALL"],
     },
     {
       title: "omnifood",
       description: "A restaurant website land page has an awesome design",
       projectLink: "https://abdelrhman-ahmed-kamal.github.io/omnifood/",
-      codeLink: "https://github.com/abdelrhman-ahmed-kamal/omnifood/",
+      codeLink: "https://github.com/Mostafa-m-gomaa",
       img: omnifood,
       tags: ["HTML & CSS", "ALL"],
     },
     {
-      title: "Productivity zone",
+      title: "Fit Club",
       description:
-        "A lot of useful tools that helps you te be more productive ",
+        "ready to level up with us ",
       projectLink:
-        "https://abdelrhman-ahmed-kamal.github.io/productivity-zone/",
-      codeLink: "https://github.com/abdelrhman-ahmed-kamal/productivity-zone",
-      img: productivity,
+        "https://mostafa-m-gomaa.github.io/Fit-Club/",
+      codeLink: "https://github.com/Mostafa-m-gomaa/Fit-Club",
+      img: hero,
       tags: ["React", "ALL"],
     },
     {
-      title: "NoteZilla",
-      description: "A Note taking app made with sst framework",
-      projectLink: "https://d36pfzmwqzyqcp.cloudfront.net/",
-      codeLink: "https://github.com/abdelrhman-ahmed-kamal/Notezilla-app",
-      img: sst,
+      title: "X-O Game",
+      description: "tic tac toe game based on react js , sass",
+      projectLink: "https://mostafa-m-gomaa.github.io/XO-Game/",
+      codeLink: "https://github.com/Mostafa-m-gomaa/XO-Game",
+      img: Xo,
       tags: ["React", "ALL"],
     },
     {
-      title: "Passwords app",
-      description: "A simple app that allows you to manage your passwords",
+      title: "Weather app",
+      description: "A simple app that allows you to the weather at any country in the world",
       projectLink:
-        "https://abdelrhman-ahmed-kamal.github.io/passwords-manager-app/",
+        "https://mostafa-m-gomaa.github.io/weather-app/",
       codeLink:
-        "https://github.com/abdelrhman-ahmed-kamal/passwords-manager-app/",
-      img: passwords,
+        "https://github.com/Mostafa-m-gomaa/weather-app",
+      img: weatheri,
       tags: ["React", "ALL"],
     },
     {
-      title: "Bankist",
+      title: "To do App",
+      description: "A simple app that allows note any thing and delete it at any time",
+      projectLink:
+        "https://mostafa-m-gomaa.github.io/student-sign-app/",
+      codeLink:
+        "https://github.com/Mostafa-m-gomaa/student-sign-app",
+      img: todo,
+      tags: ["React", "ALL"],
+    },
+    {
+      title: "Crepto",
       description:
-        "A simulation for a bank with some interested functionality fake login 'js' '1111'",
-      projectLink: "https://abdelrhman-ahmed-kamal.github.io/bankist/",
-      codeLink: "https://github.com/abdelrhman-ahmed-kamal/bankist/",
-      img: bankist,
+        "A small project that show you that u can change the color of all the website by one click",
+      projectLink: "https://mostafa-m-gomaa.github.io/vanilla-javascirpt/",
+      codeLink: "https://github.com/Mostafa-m-gomaa/vanilla-javascirpt",
+      img: crepto,
       tags: ["JavaScript", "ALL"],
     },
     {
-      title: "Mapty",
-      description: "A simple web application allows you to track your workouts",
-      projectLink: "https://abdelrhman-ahmed-kamal.github.io/mapty/",
-      codeLink: "https://github.com/abdelrhman-ahmed-kamal/mapty/",
-      img: mapty,
+      title: "speed test game",
+      description: "A simple game that test your speed at wiriting",
+      projectLink: "https://mostafa-m-gomaa.github.io/speed-test-game/",
+      codeLink: "https://github.com/Mostafa-m-gomaa/speed-test-game",
+      img: speed,
       tags: ["JavaScript", "ALL"],
     },
     {
@@ -110,49 +129,49 @@ const Projects = () => {
         "A Chat app allows you to chat with your friends in chat rooms",
       projectLink: "https://abdelrahman-chat-app.herokuapp.com",
       codeLink:
-        "https://github.com/abdelrhman-ahmed-kamal/Kalbonyan-Elmarsos/tree/main/02-Udemy/-05-Nodejs/Projects/Chat-App",
+        "https://github.com/Mostafa-m-gomaa",
       img: chat,
       tags: ["NodeJs", "ALL"],
     },
     {
-      title: "bankist website",
-      description: "A simple web application with modern animation",
-      projectLink: "https://abdelrhman-ahmed-kamal.github.io/bankist-website/",
-      codeLink: "https://github.com/abdelrhman-ahmed-kamal/bankist-website/",
-      img: bankistWebsite,
+      title: "To-DO APP",
+      description: "A simple web application that make schedule your asks",
+      projectLink: "https://mostafa-m-gomaa.github.io/To-Do-App/",
+      codeLink: "https://github.com/Mostafa-m-gomaa/To-Do-App",
+      img: oodo,
       tags: ["JavaScript", "ALL"],
     },
 
     {
-      title: "pig game",
-      description: "A simple game with 2 players",
-      projectLink: "https://abdelrhman-ahmed-kamal.github.io/pig-game/",
-      codeLink: "https://github.com/abdelrhman-ahmed-kamal/pig-game/",
-      img: pigGame,
+      title: "Creatives Agency",
+      description: "A simple website for marketing agency",
+      projectLink: "https://mostafa-m-gomaa.github.io/SpecialDesign/",
+      codeLink: "https://github.com/Mostafa-m-gomaa/SpecialDesign",
+      img: creative,
       tags: ["JavaScript", "ALL"],
     },
     {
       title: "Kasper",
       description: "An HTMl & CSS land page template",
       projectLink: "https://abdelrhman-ahmed-kamal.github.io/kasper/",
-      codeLink: "https://github.com/abdelrhman-ahmed-kamal/kasper/",
+      codeLink: "https://github.com/Mostafa-m-gomaa",
       img: kasper,
       tags: ["HTML & CSS", "ALL"],
     },
     {
-      title: "leon",
-      description: "An HTMl & CSS land page template",
-      projectLink: "https://abdelrhman-ahmed-kamal.github.io/leon/",
-      codeLink: "https://github.com/abdelrhman-ahmed-kamal/leon/",
-      img: leon,
+      title: "html&css design",
+      description: "An HTMl & CSS design that represent my skills at it",
+      projectLink: "https://mostafa-m-gomaa.github.io/new-design-/",
+      codeLink: "https://github.com/Mostafa-m-gomaa/new-design-",
+      img: htm,
       tags: ["HTML & CSS", "ALL"],
     },
     {
       title: "CV website",
-      description: "A simple website cv with colorful design",
-      projectLink: "https://abdelrhman-ahmed-kamal.github.io/CV-website/",
-      codeLink: "https://github.com/abdelrhman-ahmed-kamal/CV-website/",
-      img: cvWebsite,
+      description: "A simple website cv that represent my skills at html and css",
+      projectLink: "https://mostafa-m-gomaa.github.io/mostafagomaa/",
+      codeLink: "https://github.com/Mostafa-m-gomaa/mostafagomaa",
+      img: cvs,
       tags: ["HTML & CSS", "ALL"],
     },
   ];
@@ -177,7 +196,7 @@ const Projects = () => {
       <SectionTitle>projects</SectionTitle>
       <div className="projects">
         <div className="app__work-filter">
-          {["All", "React", "JavaScript", "HTML & CSS", "NodeJs"].map(
+          {["All", "React", "JavaScript", "HTML & CSS"].map(
             (item, index) => {
               return (
                 <div

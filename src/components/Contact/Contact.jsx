@@ -29,10 +29,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_puspxyl",
-        "template_6md1zc9",
+        "service_dee6w6f",
+        "template_xmuwyk5",
         form.current,
-        "cw_Ah7RVI9N0-s0GM"
+        "KNAMJ6lCYay8QXeyT"
       )
       .then(
         (result) => {
@@ -70,14 +70,14 @@ const Contact = () => {
             <img src={emailLogo} alt="email" />
             <a
               className="contact__email-link"
-              href="mailto:abdelrhman.contact@gmail.com"
+              href="mailto:mogo011598@gmail.com"
             >
-              abdelrhman.contact@gmail.com
+mogo011598@gmail.com
             </a>
           </div>
           <div className="app__footer-card">
             <img src={mobile} alt="mobile" />
-            <a href="tel:+20 1003685977">01003685977</a>
+            <a href="tel:+20 1113424043">01113424043</a>
           </div>
         </div>
 

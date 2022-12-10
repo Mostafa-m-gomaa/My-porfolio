@@ -2,6 +2,7 @@ import BackgroundAnimation from "../BackgroundAnimation/BackgroundAnimation";
 import { useEffect, useState } from "react";
 
 import "./Hero.scss";
+import React from "react";
 
 enum Phase {
   Typing,
@@ -9,8 +10,8 @@ enum Phase {
   Deleting,
 }
 
-const TYPING_INTERVAL = 150;
-const PAUSE_MS = 1000;
+const TYPING_INTERVAL = 100;
+const PAUSE_MS = 1500;
 const DELETING_INTERVAL = 50;
 
 const useTypeSuperPower = (
@@ -75,9 +76,9 @@ const useTypeSuperPower = (
 };
 
 const superpowers = [
-  "Abdelrahman Ahmed",
-  "A full stack web developer",
-  "A self thought programmer",
+  "Mosafa Mohammed Gomaa",
+  "A Software Engineer",
+  "A React developer especially",
 ];
 
 const Hero = () => {

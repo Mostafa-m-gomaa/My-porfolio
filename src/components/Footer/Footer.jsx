@@ -33,9 +33,9 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="https://www.facebook.com/profile.php?id=100077732360682"
+                  href="https://www.facebook.com/gomaa.mostafa.5/"
                   rel="noreferrer"
-                  title="Abdelrahman on Facebook"
+                  title="Gomaa on Facebook"
                   target="_blank"
                 >
                   <BsFacebook className="fa" />
@@ -43,9 +43,9 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="https://www.linkedin.com/in/abdelrahman-ahmed-kamal/"
+                  href="https://www.linkedin.com/in/mostafa-gomaa-4a2660217/"
                   rel="noreferrer"
-                  title="Abdelrahman on LinkedIn"
+                  title="Mostafa on LinkedIn"
                   target="_blank"
                 >
                   <BsLinkedin className="fa" />
@@ -57,7 +57,7 @@ const Footer = () => {
               <BsFillArrowUpCircleFill className="fa fa-arrow-up" />
             </a>
 
-            <p className="copy-right">{`made with love by abdelrahman ahmed @${new Date().getFullYear()} all rights reserved`}</p>
+            <p className="copy-right">{`made with love by Mostafa Mohamed Gomaa @${new Date().getFullYear()} all rights reserved`}</p>
           </div>
         </div>
       </div>

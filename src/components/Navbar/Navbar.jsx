@@ -1,5 +1,5 @@
 import { useState } from "react";
-import logo from "../../assets/logos/download1.png";
+import logo from "../../assets/logos/gm.png";
 
 import classes from "./Navbar.module.scss";
 

@@ -168,15 +168,15 @@ const Skills = () => {
             </div>
             <p className="skill-name">NodeJs</p>
           </div>
-          <div className="skills__item app__flex">
+          {/* <div className="skills__item app__flex">
             <div className="app__flex">
               <img src={aws} alt="aws" />
             </div>
             <p className="skill-name">AWS</p>
-          </div>
+          </div> */}
         </div>
 
-        <div className="skills-certificates">
+        {/* <div className="skills-certificates">
           {certificates.map((certificate) => {
             return (
               <div key={certificate.id} className="skills-cer">
@@ -217,7 +217,7 @@ const Skills = () => {
               </div>
             );
           })}
-        </div>
+        </div> */}
       </div>
     </motion.section>
   );

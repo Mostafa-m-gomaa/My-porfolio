@@ -1,7 +1,7 @@
 import classes from "./About.module.scss";
 import SectionTitle from "../UI/SectionTitle";
 
-import pic from "../../assets/images/special.jpg";
+import pic from "../../assets/images/me.jpg";
 
 const About = () => {
   return (
@@ -11,8 +11,8 @@ const About = () => {
         <div className={classes["about__text-box"]}>
           <div>
             <p className={classes["about__paragraph"]}>
-              Hello! My name is Abdelrahman Ahmed. I am a self-taught web
-              developer who is passionate about programming in general and
+              Hello! My name is Mostafa Mohammed. I am a self-taught And a college learner 
+              programming who is passionate about programming in general and
               especially web development.
             </p>
             <p className={classes["about__paragraph"]}>

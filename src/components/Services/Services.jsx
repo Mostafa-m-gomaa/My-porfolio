@@ -25,10 +25,10 @@ const Services = () => {
             business
           </p>
           <a
-            href="https://icy-drop-674.notion.site/Abdelrhman-s-resume-3b987f47d3554ec79339a7e897773e1a"
+            href="Mostafa_gomaa_front_end_developer.pdf"
             target="_blank"
-            rel="noreferrer"
             className={`${classes["services__button"]}`}
+            download
           >
             Download CV
           </a>
